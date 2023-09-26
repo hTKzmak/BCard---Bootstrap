@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Business Card - Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+        html,
+        body {
+            background: rgb(34, 34, 34);
+            color: rgb(212, 212, 212);
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .card {
+            animation: intro 0.8s;
+        }
+
+        @keyframes intro {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-sm">
+        <div class="card mt-5" style="width: 30rem; background-color: rgb(44,44,44); color: whitesmoke;">
+            <div class="card-body">
+                <h3 class="card-title text-center text-uppercase">
+                    M&nbsp;&nbsp;&nbsp;e&nbsp;&nbsp;&nbsp;l&nbsp;&nbsp;&nbsp;n&nbsp;&nbsp;&nbsp;i&nbsp;&nbsp;&nbsp;k
+                </h3>
+            </div>
+            <div class="card-body d-flex justify-content-center gap-5" style="background-color: rgb(32, 32, 32);">
+                <button type="button" class="btn btn-outline-light aboutMe">About me</button>
+                <button type="button" class="btn btn-outline-light iCanDo">What I can/know</button>
+                <button type="button" class="btn btn-outline-light profilePic">Profile pic</button>
+            </div>
+            <div class="card-main p-5">
+                <p class="text-center">Press on these buttons to see information about me</p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
